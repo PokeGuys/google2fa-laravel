@@ -38,7 +38,7 @@
                 "PragmaRX\\Google2FALaravel\\LaravelServiceProvider"
             ],
             "aliases": {
-                "Google2FA": "PragmaRX\\Google2FALaravel\\Facade\\Google2FA"
+                "Google2FA": "PragmaRX\\Google2FALaravel\\Facades\\Google2FA"
             }
         }
     },
