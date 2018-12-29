@@ -5,7 +5,7 @@ namespace PragmaRX\Google2FALaravel\Tests;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use PragmaRX\Google2FA\Tests\Constants;
-use PragmaRX\Google2FALaravel\Facade as Google2FA;
+use PragmaRX\Google2FALaravel\Facades\Google2FA;
 use PragmaRX\Google2FALaravel\Tests\Support\User;
 
 class Google2FaLaravelTest extends TestCase
@@ -13,7 +13,7 @@ class Google2FaLaravelTest extends TestCase
     protected function getPackageProviders($app)
     {
         return [
-            \PragmaRX\Google2FALaravel\ServiceProvider::class,
+            \PragmaRX\Google2FALaravel\LaravelServiceProvider::class,
             \Illuminate\Auth\AuthServiceProvider::class,
         ];
     }
@@ -21,7 +21,7 @@ class Google2FaLaravelTest extends TestCase
     protected function getPackageAliases($app)
     {
         return [
-            'Google2FA' => \PragmaRX\Google2FALaravel\Facade::class,
+            'Google2FA' => \PragmaRX\Google2FALaravel\Facades\Google2FA::class,
             'Auth'      => \Illuminate\Support\Facades\Auth::class,
         ];
     }

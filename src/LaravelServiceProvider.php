@@ -4,7 +4,7 @@ namespace PragmaRX\Google2FALaravel;
 
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 
-class ServiceProvider extends IlluminateServiceProvider
+class LaravelServiceProvider extends IlluminateServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
